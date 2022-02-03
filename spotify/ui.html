@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>despa, load spotify</title>
+        <link rel="stylesheet" href="./css/spotify-style.css">
+    </head>
+    <body>
+        <div class="spotify-main-box" style="display: block;">
+            <div class="spotify-side-menu">
+                <img src="https://cdn.discordapp.com/attachments/888454964165369859/936570441219338330/project-copy-152708468-removebg-preview.png">
+                <hr class="side-menu-img-hr">
+                <p class="spotify-menu-text" onclick="balard_function()" id="balrad_b">음악 플레이 리스트</p>
+                <p class="spotify-menu-text" onclick="popsong_function()" id="popsong_b">사용방법</p>
+                <p class="spotify-menu-text" onclick="hiphop_function()" id="hiphob_b">제작자</p>
+                <i class="fas fa-cog"></i>
+            </div>
+
+            <div class="title">
+                <h1>SPOTIFY</h1>
+                <p class="balrad-info">음악 플레이 리스트에서 명곡을 감상할수있습니다.</p>
+            </div>
+
+            <div class="musicbox">
+                <div id="balrad" style="display: none;">
+                    <div class="balrad-music-list">
+                        <img class="play" id="you" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="you_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936618343232839700/49e40ec70a1c7d40712b8a4191fee33e.600x600x1.jpg">
+                        <p class="music-name">너의 모습</p>
+                        <p class="music-singer">정동하</p>
+                        <p class="music-time">4:46</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="love" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="love_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936628123468984350/download.jpg">
+                        <p class="music-name">사랑은 늘 도망가</p>
+                        <p class="music-singer">임영웅</p>
+                        <p class="music-time">4:02</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="cnlrl" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="cnlrl_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936628449878102016/download.jpg">
+                        <p class="music-name">취기를 빌려</p>
+                        <p class="music-singer">그녀 X 산들</p>
+                        <p class="music-time">3:48</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="sky" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="sky_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936632979361529926/download.jpg">
+                        <p class="music-name">저녁 하늘</p>
+                        <p class="music-singer">에일리</p>
+                        <p class="music-time">3:26</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="tjaus" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="tjaus_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/930731398858412066/936637716039340032/download.jpg">
+                        <p class="music-name">서면역에서</p>
+                        <p class="music-singer">순순희</p>
+                        <p class="music-time">3:27</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="life" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="life_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936638655777341471/download.jpg">
+                        <p class="music-name">살다가</p>
+                        <p class="music-singer">SG워너비</p>
+                        <p class="music-time">5:14</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="sotkfka" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="sotkfka_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936639016609144862/download.jpg">
+                        <p class="music-name">내 사람</p>
+                        <p class="music-singer">SG워너비</p>
+                        <p class="music-time">5:00</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="lovesong" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="lovesong_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936640304457584700/download.jpg">
+                        <p class="music-name">취중고백</p>
+                        <p class="music-singer">멜로망스</p>
+                        <p class="music-time">4:18</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="rmsu" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="rmsu_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936640592153284619/download.jpg">
+                        <p class="music-name">그녀를 사랑해줘요</p>
+                        <p class="music-singer">하동균</p>
+                        <p class="music-time">4:19</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="GXNZI" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="GXNZI_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src='https://media.discordapp.net/attachments/922096127103361034/936737092497719366/unknown.png?width=653&height=663'>
+                        <p class="music-name">간지</p>
+                        <p class="music-singer">베이식</p>
+                        <p class="music-time">3:11</p>
+                    </div>
+                    <div class="balrad-music-list">
+                        <img class="play" id="PROTOTYPE" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="PROTOTYPE_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src='https://media.discordapp.net/attachments/922096127103361034/936736002423271504/download.jpg'>
+                        <p class="music-name">PROTOTYPE</p>
+                        <p class="music-singer">쿤타</p>
+                        <p class="music-time">3:11</p>
+                    </div>
+    
+                    <div class="balrad-music-list">
+                        <img class="play" id="OneLove" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="OneLove_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/922096127103361034/936642081244463224/unknown.png">
+                        <p class="music-name">One Love</p>
+                        <p class="music-singer">엠씨 더 맥스</p>
+                        <p class="music-time">4:21</p>
+                    </div>
+                    <div class="balrad-music-list">
+                        <img class="play" id="Stay" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="Stay_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/888454964165369859/936657880218742895/download.jpg">
+                        <p class="music-name">STAY</p>
+                        <p class="music-singer">Justin Bieber</p>
+                        <p class="music-time">2:19</p>
+                    </div>
+
+                    <div class="balrad-music-list">
+                        <img class="play" id="Payphone" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="Payphone_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                          <img class="balrad-img" src="https://cdn.discordapp.com/attachments/888454964165369859/936658663563730974/download.jpg">
+                        <p class="music-name">Payphone</p>
+                        <p class="music-singer">Maroon 5</p>
+                        <p class="music-time">3:52</p>
+                    </div>
+
+                    <div class="balrad-music-list">
+                        <img class="play" id="Watermelon" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="Watermelon_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/888454964165369859/936659248379756655/download.jpg">
+                        <p class="music-name">Watermelon Sugar</p>
+                        <p class="music-singer">Harry Styles</p>
+                        <p class="music-time">3:08</p>
+                    </div>
+
+                    <div class="balrad-music-list">
+                        <img class="play" id="Painkiller" src="https://cdn.discordapp.com/attachments/888454964165369859/936691671704412234/unknown-removebg-preview_3.png">
+                        <img class="play" id="Painkiller_pause" src="https://cdn.discordapp.com/attachments/888454964165369859/936691739467599922/unknown-removebg-preview_4.png">
+                        <img class="balrad-img" src="https://cdn.discordapp.com/attachments/888454964165369859/936659654661009438/download.jpg">
+                        <p class="music-name">Painkiller</p>
+                        <p class="music-singer">Ruel</p>
+                        <p class="music-time">3:33</p>
+                    </div>
+
+                <div id="popsong" style="display: none; overflow:auto;    width: 1000px;  height: 582.5px;">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/main.js"> </script>
+</html>
